@@ -20,5 +20,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^chaining/', include('smart_selects.urls')),
     url(r'^check/','source_data.views.checkselect',name='abc'),
-    url(r'^thisisformobilepleasedonttrythisurl/$','entity.views.mobileapi',name="mobilesuit")
+    url(r'^thisisformobilepleasedonttrythisurl/$','entity.views.mobileapi',name="mobilesuit"),
+    url(r'^answer/','source_data.views.postandresp',name="xbc"),
+
 ]
+

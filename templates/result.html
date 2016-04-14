@@ -15,7 +15,7 @@
 <body>
 	<h1>Select From Our Wide range of Business Entities</h1>
 <div>
-	<form>
+	<form method='POST' action="{% url 'xbc' %}"> {% csrf_token %}
 	{% bootstrap_form form %}
 	{% bootstrap_form form1 %}
 		<input type="submit" value="Submit">
