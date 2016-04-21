@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+{% load static %}
+{% load staticfiles %}
+<html lang="en" class="purple">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ishan Creations</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'new.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: #800080;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <span class="light"><i>ISHAN CREATIONS</i></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="purple width"> <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'icbc' %}">ICBC</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'b_c' %}">Business Category</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div></div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"></h1>
+                        <p class="intro_text">An individual can strengthen the world.<br>Know How?</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+        <div class="purple">
+        <section id="about" class="container content-section text-center">
+        <div class="row">
+            <h2>About Us</h2>
+            <p> Ishan Creations was created & founded by Rajneesh Kumar Malhotra in 2015. At Ishan Creations, Our aim from inception is to put the needs of others first, and our commitment to give back Value for money to them.
+            Ishan Creations' Motto is “Get More. SMARTLY” </p>
+            <p>Ishan Creations is the World’s 1st and Unique innovative concept with a:<br>
+                <div class="center">•   Vision - वसुधैव कुटुम्बकम (Vasudhaiv Kutumbakam)-The Whole World is a Family<br>
+                •   Mission - Empowering Consumer and Strengthening Business<br> </div>
+            </p>
+ 
+                <p>It gives a platform to those Entrepreneurs / Business entities that are committed to provide Best Quality Products & Services to Our Consumer members at a reasonable competitive Price and eager to promote this awareness to everyone.
+                </p>
+            <p> 
+            <b>For Consumer</b>, Our objective is to make home consumables conveniently available with Value for money. We at Ishan Creations aim to provide Benefits in your Daily needs to Shopping, Dining to Entertainment, Fitness to Wellness and many more services with Trust.</p>
+            <p><b>For Business entity</b>, We help to get Better ROI by strengthening their business with a long term Success and Growth.
+            </p>
+
+            <p>
+                Our members are our family and we want to build Trust and Confidence in Consumer and Business entities to serve right & better by understanding their preferences and have a genuine, mutual and profound long term relationship with lots of Privileges & Benefits.
+            </p>    
+
+            <p class="xyz">
+                Not already associated with Us, what are You waiting for? <br>
+                Be a part of our Family and Get More. SMARTLY.
+            </p>
+
+        </div>
+
+
+    </section>
+    <div class="margin">
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+           
+                <h2>Contact Us</h2>
+                <p class="xyz"> We are always happy to hear from you.</p>
+                <a href="mailto:ishancreations@hotmail.com?Subject=Hello" target="_top">ishancreations@hotmail.com</a>
+                <p class="xyz"> Phone: +91 97-69-818327</p>
+        </div>
+    </section>
+</div>
+
+
+    <footer>
+        <div class="container text-center">
+            <p class="xyz">Copyright &copy; Ishan Creations 2016</p>
+        </div>
+    </footer>
+</div>
+
+    <!-- Contact Section -->
+
+    <!-- Footer -->
+  
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'js/grayscale.js' %}"></script>
+
+</body>
+        
+</html>

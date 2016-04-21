@@ -1,0 +1,95 @@
+.purple {
+	background-color: #800080;
+	height: 100%;
+	margin-top:;
+}
+.border {
+	border-bottom: 2px solid black;
+}
+li {
+	list-style-type: none;
+}
+.intro_text {
+	font-size: 35px;
+	font-family: Trebuchet MS;
+	text-align: center;
+}
+.width {
+	width: 100%;
+	position: ;
+}
+#biz_c_heading {
+	font-family: Arial;
+	text-align: center;
+	padding-top: 5%;
+	font-weight: 300;
+}
+.xyz {
+	text-align: center;
+}
+.row {
+	margin-top: -5%;
+}
+
+h2 {
+	color: #bf7fbf;
+}
+
+p {
+	font-size: 19px;
+	font-family: Arial;
+	text-align: left;
+}
+.center {
+	font-size: 19px;
+	font-family: Arial;
+	text-shadow: 1px 4px 8px #258991;
+}
+.margin {
+	margin-top: -5%;
+}
+h4 {
+	color: #bf7fbf;
+}
+#customer_members {
+	width: 90%;
+	margin: 0 auto;
+}
+#business_members {
+	width: 90%;
+	margin: 0 auto;
+}
+
+li {
+	list-style-type: none;
+}
+.section {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	border: 1px solid #400040;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #993299;
+	padding: 1% 1% 1% 1%;
+}
+.inside_sections {
+	width: 80%;
+	margin: 0 auto;
+	font-family: Verdana;
+	border: 1px solid #400040;
+	border-radius: 5px;
+	background-color: #b266b2;
+	display: none;
+}
+#benefits {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+	text-align: center;
+}
+#small_text {
+	font-size: 15px;
+}

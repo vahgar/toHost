@@ -1,0 +1,269 @@
+{% load static %}
+{% load staticfiles %}
+<html lang="en" class="purple">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ICBC</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
+    <link href="{% static 'new.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+</head>
+<body class="purple">
+	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: #800080;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                  <span class="light"><i>ISHAN CREATIONS</i></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <div class="purple width"> <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'homepage' %}">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'icbc' %}">ICBC</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="{% url 'b_c' %}">Business Category</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div></div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="purple">
+        <div class="margin">
+        <section id="icbc" class="container content-section text-center">
+        <div class="row">
+        	<h2>Ishan Creations Business Club</h2>
+        	<p>
+            "Ishan Creations Business Club (ICBC) is the very Core Division of Ishan Creations."
+Ishan Creations Business Club (ICBC) is created with the most innovative concept of "Empowering Consumer and Strengthening Business". It aims to provide the every member with the opportunity to have the best products and services. For Consumer, its objective is to make home consumables conveniently available at your doorsteps. For Business entity, it helps to get better ROI by strengthening their business.</p>
+<p>
+In today's busy lifestyle, ICBC allows you to walk away from the drudgery of spending hours at supermarkets for grocery shopping and spend your free time to enhance your family bonding and doing things you like.
+
+At ICBC you will get best prices on your daily needs and favourite grocery items with free home delivery for all order above Rs. 1000.You don't need to worry about getting stuck in traffic jams, long queues to billing desk, burning fuels to reach retail shop/supermarkets,paying for parking charges,carrying large heavy bags.</p>
+
+<p>We at ICBC strive to achieve highest level of customer satisfaction & delight by delivering the right quality product in time as desired by our customer. With all this it brings to you all the price benefits and Quality Guarantee and we built the base of highly satisfy customers by providing them best value for their money.
+
+You can return the material if you are not satisfied without any questions asked at the time of delivery. Be it our path-breaking services like Cash on Delivery, a 5-day replacement policy.
+Presently our services are focused in Kandivali (Mumbai) & we are willing to expand our local presence across all areas.</p>
+
+        </div>
+    </div>
+
+    <div id="customer_members">
+        <h4>Customer Members</h4>
+         <ul>
+        <li><div id="section1" class="section">Empowering Consumers <i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+<div id="inside_section1" class="inside_sections">
+* Value for Money<br>
+* Time Saving<br> 
+* Money Saving<br>
+* Enhances Family Bonding<br>
+</div>
+        </li>
+        <li><div id="section2" class="section">Provide Platform for Growth <i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        <div id="inside_section2" class="inside_sections">
+# Who dreamt of starting their Own Business<br>
+# Who want to be successful in the Business world<br>
+# Who have Dreams / Ideas / Technicalities / Mfg Capacity, but does  not  have adequate   Market experience or Expansion Resources / Finances.
+
+        </div>
+        </li>
+         </ul>
+    <div id="benefits">
+         <h4>Benefits for Consumer</h4>
+         <p>We intend to provide our Privilege Card members with a plentiful Privileges & Benefits on:
+Daily Needs / Medical & Health Care / Clothing & Footwear / Food Zone / Fitness Zone / Home Appliances / Home Decor / Personal Care / Travel Zone / S.O.D. Zone / Entertainment Zone/ Consultancy / Education Zone / Hobby Zone / Photo World / Stationary Zone/ Automobile Zone / Real Estate / Tech Zone / Hardware Zone / Jewellery Zone / Pet Zone / Repair Zone  / Banquets & Party Halls / and Many More….......
+</p>
+
+    <p>Click on <a href="{% url 'b_c' %}">Business Categories</a> to explore.<br>
+    <a href="http:/abc.pdf">Click Here</a> to download our <i class="fa fa-android 3x" aria-hidden="true"></i> Application.</p>
+     </div>
+
+
+    </div>
+
+
+<div id="business_members">
+        <h4>Business Entities</h4>
+
+     <ul>
+        <li><div id="section1_" class="section">Strengthening Business<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+<div id="inside_section1_" class="inside_sections">
+♣   Need More Sales?<br> 
+♣   Want to Improve Profitability?<br> 
+♣   Want Growth & Expansion in Business?<br> 
+♣   Not getting good Return on Investments (ROI)?<br>
+
+</div>
+        </li>
+      
+<li><div id="section2_" class="section">Growth & ROI<i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+        <div id="inside_section2_" class="inside_sections">
+* Stock Management <br>
+* Large Consumer Base and Volume Sales<br>
+* Increased Turnover<br> 
+* More Profitability<br> 
+* Builds Credibility<br> 
+* Improves Good Market Share<br> 
+* Increases ROI<br> 
+* and Many More……<br>
+
+        </div>
+        </li>
+
+      </ul>   
+    <div id="benefits">
+         <h4>Benefits for Business Entities</h4>
+         <p id="small_text">As a member you also get the opportunity to:<br>
+* Attend informal and structured events with a view to enhance your 
+   Business<br> 
+* Promote your business in person and on our website & App.<br> 
+* Build and Meet new Business contacts for growth & expansion.<br>
+</p>
+   
+     </div>
+
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- Custom Theme JavaScript -->
+    <script src="{% static 'js/grayscale.js' %}"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('#section1').click(function() {
+            $('#inside_section1').slideToggle("slow");
+        });
+
+        $('#section1').hover(function() {
+            $('#section1').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section1').css('background-color','')
+
+        });
+
+        $(document).click(function(e) {
+         if(e.target.id!="section1")
+         {
+            $("#inside_section1").slideUp("slow");
+         }
+         if(e.target.id!="section2")
+         {
+            $('#inside_section2').slideUp("slow");
+         }
+        });
+
+        $('#section2').click(function() {
+            $('#inside_section2').slideToggle("slow");
+        });
+
+        $('#section2').hover(function() {
+            $('#section2').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section2').css('background-color','')
+
+        });
+
+
+    });
+
+
+    </script>
+
+
+
+    <script>
+
+    $(document).ready(function(){
+        $('#section1_').click(function() {
+            $('#inside_section1_').slideToggle("slow");
+        });
+
+        $('#section1_').hover(function() {
+            $('#section1_').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section1_').css('background-color','')
+
+        });
+
+        $(document).click(function(e) {
+         if(e.target.id!="section1_")
+         {
+            $("#inside_section1_").slideUp("slow");
+         }
+         if(e.target.id!="section2_")
+         {
+            $('#inside_section2_').slideUp("slow");
+         }
+        });
+
+        $('#section2_').click(function() {
+            $('#inside_section2_').slideToggle("slow");
+        });
+
+        $('#section2_').hover(function() {
+            $('#section2_').css('background-color','#bf7fbf')
+
+        },function() {
+
+            $('#section2_').css('background-color','')
+
+        });
+
+
+    });
+
+    </script>
+</body>
+</html>

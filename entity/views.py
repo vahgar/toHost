@@ -5,6 +5,8 @@ import json
 # Create your views here.
 def mobileapi(request):
 	data = business_entity.objects.all();
-	x = serializers.serialize('json',data,indent=2)
-	j_data = json.loads(x)
-	return HttpResponse(j_data,content_type="application/json")
+	data_list = []
+	for i in data:
+		data_list.append({'NAME':i.name,'CONTACT_PERSON':i.contact_person,'SERVICES':i.services,'SOCIAL_MEDIA':i.social_media,'CATEGORY':i.category.name,'WHATSAPP':i.whatsapp,'LOCALITY':i.locality.name,'WEBSITE':i.website,'AREA':i.area.name,'MOBILE':i.mobile,'EMAIL':i.Email,'TIMINGS':i.timings,'CITY':i.city.name,'SUBCATEGORY':i.subcategory.name,'PROFILE':i.profile,'CUSTOMER_RATING':i.customer_rating,'ADDRESS':i.address})
+	data_list_json =json.dumps(data_list,indent=4)	
+	return HttpResponse(data_list_json,content_type="application/json")

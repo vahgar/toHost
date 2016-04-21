@@ -17,9 +17,11 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', 'source_data.views.index',name="homepage"),
+    url(r'^icbc$', 'source_data.views.icbc',name='icbc'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^chaining/', include('smart_selects.urls')),
-    url(r'^check/','source_data.views.checkselect',name='abc'),
+    url(r'^business_category/','source_data.views.checkselect',name='b_c'),
     url(r'^thisisformobilepleasedonttrythisurl/$','entity.views.mobileapi',name="mobilesuit"),
     url(r'^answer/','source_data.views.postandresp',name="xbc"),
 

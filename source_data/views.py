@@ -8,7 +8,13 @@ def checkselect(request):
 	form_x = LocationForm();
 	form_y = CategoryForm();
 	context = {'form':form_x, 'form1':form_y}
-	return render(request,'result.html',context);
+	return render(request,'business_category.html',context);
+
+def index(request):
+	return render(request,'index.html')
+
+def icbc(request):
+	return render(request,'icbc.html')	
 
 
 def postandresp(request):
