@@ -93,3 +93,21 @@ li {
 #small_text {
 	font-size: 15px;
 }
+
+#form_div {
+	width: 60%;
+	margin: 0 auto;
+	font-family: Arial;
+}
+#bizC {
+	margin-top: 15%;
+	text-align: center;
+}
+#cb {
+	width: 40px;
+	margin: 0 auto;
+}
+
+#ads {
+	margin: 5%;
+}
