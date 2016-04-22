@@ -26,4 +26,3 @@ urlpatterns = [
     url(r'^answer/','source_data.views.postandresp',name="xbc"),
 
 ]
-
