@@ -104,10 +104,16 @@ li {
 	text-align: center;
 }
 #cb {
-	width: 40px;
+	width:60px;
 	margin: 0 auto;
 }
 
 #ads {
 	margin: 5%;
+	margin: 0 auto;
+	margin-top: 20%;
+	height: 60%;
+	width: 80%;
+	background-color: #bf9fbf;
+
 }
