@@ -1,5 +1,5 @@
 from django.db import models
-from source_data.models import City,Area,Street,Category,SubCategory
+from source_data.models import City,Area,Street,Category,SubCategory,SubsubCategory
 
 # Create your models here.
 class business_entity(models.Model):
@@ -21,6 +21,7 @@ class business_entity(models.Model):
     locality = models.ForeignKey(Street,blank=True,null=True)
     category = models.ForeignKey(Category,blank=True,null=True)
     subcategory = models.ForeignKey(SubCategory,blank=True,null=True)
+    subsubcategory = models.ForeignKey(SubsubCategory,blank=True,null=True)
     
     def __str__(self):
     	return self.name

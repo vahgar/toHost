@@ -54,12 +54,18 @@ class Category(models.Model):
 		return self.name
 
 class SubCategory(models.Model):
-    name = models.CharField(max_length=255)
+    name = models.CharField(max_length=255,blank=True)
     category = models.ForeignKey(Category)
 
     def __str__(self):
     	return self.name
 
+class SubsubCategory(models.Model):
+	name = models.CharField(max_length=255,blank=True,null=True)
+	subCategory = models.ForeignKey(SubCategory)
+
+	def __str__(self):
+		return self.name
 
 class ChooseCategory(models.Model):
 	category = models.ForeignKey(Category)
@@ -70,7 +76,18 @@ class ChooseCategory(models.Model):
 		show_all=False,
 		auto_choose=False,
 		)
-	xyz = models.CharField(max_length=255)
+
+	subsubCategory = ChainedForeignKey(
+		SubsubCategory,
+		chained_field="subCategory",
+		chained_model_field="subCategory",
+		show_all=False,
+		auto_choose=False,
+		blank=True,
+		null=True,
+		)
+
+
 
 	def __str__(self):
 		return self.name	

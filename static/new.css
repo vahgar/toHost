@@ -3,6 +3,16 @@
 	height: 100%;
 	margin-top:;
 }
+.individual {
+	width: 80%;
+	margin: 0 auto;
+	}
+#message {
+	text-align: center;
+	font-size: 25px;
+	line-height: 1.8;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
 .border {
 	border-bottom: 2px solid black;
 }
@@ -70,8 +80,8 @@ li {
 	font-weight: 500;
 	font-size: 18px;
 	border: 1px solid #400040;
-	border-radius: 5px;
 	text-align: center;
+	border-radius: 5px;
 	background-color: #993299;
 	padding: 1% 1% 1% 1%;
 }
@@ -83,6 +93,7 @@ li {
 	border-radius: 5px;
 	background-color: #b266b2;
 	display: none;
+	font-size: 16px;
 }
 #benefits {
 	width: 80%;
@@ -91,7 +102,8 @@ li {
 	text-align: center;
 }
 #small_text {
-	font-size: 15px;
+	font-size: 18px;
+	font-family: arial;
 }
 
 #form_div {
@@ -116,4 +128,85 @@ li {
 	width: 80%;
 	background-color: #bf9fbf;
 
+}
+#app {
+	text-align: center;
+}
+#question {
+	width: 80%;
+	font-family: Arial;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .mobile {
+  	margin-top: 10%;
+  }
+  p {
+  	font-size: 12px;
+  }
+  #question {
+  	font-size: 10px;
+  	margin: 0;
+  }
+  #small_text {
+  	font-size: 12px;
+  }
+  h2 {
+  	font-size: 16px;
+  }
+  h4 {
+  	font-size: 13px;
+  }
+  .section {
+  	font-weight: 350;
+  	font-size: 14px;
+  	
+  }
+  .inside_sections {
+  
+  	font-size: 11px;
+  }
+  span {
+  	display: hidden;
+  }
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .mobile {
+  	margin-top: 10%;
+  }
+  p {
+  	font-size: 10px;
+  }
+  #question {
+  	font-size: 8px;
+  	margin: 0;
+  }
+  #small_text {
+  	font-size: 10px;
+  }
+  h2 {
+  	font-size: 14px;
+  }
+  h4 {
+  	font-size: 11px;
+  }
+  .section {
+  	font-weight: 350;
+  	font-size: 12px;
+  	margin: 0;
+  }
+  .inside_sections {
+  
+  	font-size: 9px;
+  	margin: 0;
+  }
+  span {
+  	display: hidden;
+  }
 }

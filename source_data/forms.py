@@ -19,4 +19,4 @@ class LocationForm(ModelForm):
 class CategoryForm(ModelForm):
 	class Meta:
 		model = ChooseCategory
-		fields = ['category','subCategory']
+		fields = ['category','subCategory','subsubCategory']
