@@ -44,7 +44,9 @@ li {
 h2 {
 	color: #bf7fbf;
 }
-
+#size_small {
+	font-size: 15px;
+}
 p {
 	font-size: 19px;
 	font-family: Arial;
@@ -136,6 +138,15 @@ li {
 	width: 80%;
 	font-family: Arial;
 	font-size: 16px;
+	margin: 0 auto;
+}
+#get_text {
+	font-family: Papyrus, fantasy;
+}
+
+#logo {
+	width: 60%;
+	height: 20%;
 	margin: 0 auto;
 }
 
