@@ -1,0 +1,81 @@
+.intro_text {
+	font-size: 35px;
+	font-family: Trebuchet MS;
+	text-align: center;
+}
+#message {
+	font-size: 25px;
+	font-family: 'avenirbook', sans-serif;
+	font-weight: 500;
+}
+.individual {
+	width: 80%;
+	margin-left: 20%;
+	text-align: left;
+}
+#inside_individual {
+	width: 80%;
+}
+#right {
+	text-align: center;
+	font-size: 25px;
+	font-family: 'avenirbook', sans-serif;
+	font-weight: 200;
+
+}
+#get_text {
+	font-family: papyrus;
+}
+p {
+	font-family: Arial;
+	font-size: 22px;
+	text-align: left;
+}
+#logo {
+	width: 100%;
+	background-color: white;
+	height: 20%;
+}
+li {
+	list-style-type: none;
+}
+#vision {
+	width: 80%;
+	margin: 0 auto;
+}
+#text {
+	font-size: 18px;
+}
+#text2 {
+	font-size: 16px;
+}
+.xyz {
+	text-align: center;
+}
+#size_small {
+	font-size: 15px;
+}
+@media only screen and (max-width: 500px) {
+    .intro_text {
+    	font-size: 25px;
+    }
+    #message {
+    	font-size: 12px;
+    }
+    .individual {
+    	font-size: 15px;
+    	margin: 0 auto;
+    }
+    #right {
+    	font-size: 17px;
+    }
+    p{
+    	margin-left: 2%;
+    	font-size: 18px;
+    }
+    img {
+    	width: 60%;
+
+    }
+
+}

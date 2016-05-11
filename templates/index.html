@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 {% load staticfiles %}
-<html lang="en" class="purple">
+<html lang="en" style="background-color:#800080">
 
 <head>
 
@@ -18,7 +18,7 @@
 
     <!-- Custom CSS -->
     <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
-    <link href="{% static 'new.css' %}" rel="stylesheet">
+    <link href="{% static 'index.css' %}" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -92,22 +92,25 @@
 
     <div>
 
-
-    </div>
-
-    <div>
-
-        <section id="message" class="container content-section text-center">
+        <section id="message" class="container content-section text-center" style="background-color:#800080">
         <div class="row">
-            <h2>How it works</h2>
-            <div class="individual"><p id="message">Ishan Creations Empowers an Individual,which Strengthens Family.<br>
-We Empower Family,which Strengthens Society.<br>
-We Empower Society,which Strengthens State.<br>
-We Empower State,which Strengthens Country.<br>
-We Empower Country,which Strengthens the World.<br></p></div>
+            <div class="individual">
+                
+                Ishan Creations Empowers an Individual,<br>
+                                        <p id="right">which Strengthens Family.</p> 
+                Ishan Creations Empowers Family,<br> 
+                                        <p id="right">which Strengthens Society.</p> 
+                Ishan Creations Empowers Society,
+                                        <p id="right">which Strengthens State.</p>
+                Ishan Creations Empowers State,
+                                        <p id="right"> which Strengthens Country.</p>
+                Ishan Creations Empowers Country,
+                                         <p id="right">which Strengthens the World.</p>
+                        
+                                    
         </div>
 
-
+    </div>
     </section>
 
     </div>
@@ -119,12 +122,21 @@ We Empower Country,which Strengthens the World.<br></p></div>
             <h2>About Us</h2>
             <p> Ishan Creations was created & founded by Rajneesh Kumar Malhotra in 2015. At Ishan Creations, Our aim from inception is to put the needs of others first, and our commitment to give back Value for money to them.
             Ishan Creations' Motto is <span id="get_text">“Get More. SMARTLY”</span> </p>
+            <br>
             <div id="logo">
-                <img src="{% static 'IC_logo.png' %}" alt="My image"/>
+                <img src="{% static 'IC_(logo).png' %}" alt="My image"/>
             </div>
+            <br>
             <p>Ishan Creations is the World’s 1st and Unique innovative concept with a:<br>
-                <div class="center">•   Vision - वसुधैव कुटुम्बकम (Vasudhaiv Kutumbakam)-The Whole World is a Family<br>
-                •   Mission - Empowering Consumer and Strengthening Business<br> </div>
+            <div id="vision">
+            <p>    
+                <i class="fa fa-star" aria-hidden="true"></i>
+ Vision - वसुधैव कुटुम्बकम <span id="text">(Vasudhaiv Kutumbakam)</span>-<span id="text2">The Whole World is a Family</span><br>
+                <i class="fa fa-star" aria-hidden="true"></i>
+ Mission - <span id="get_text">Empowering Consumer, Strengthening Business.</span>
+            </p>
+            
+            </div>
             </p>
  
                 <p>It gives a platform to those Entrepreneurs / Business entities that are committed to provide Best Quality Products & Services to Our Consumer members at a reasonable competitive Price and eager to promote this awareness to everyone.
@@ -152,9 +164,10 @@ We Empower Country,which Strengthens the World.<br></p></div>
         <div class="row">
            
                 <h2>Contact Us</h2>
-                <p class="xyz"> We are always happy to hear from you.</p>
-                <a href="mailto:ishancreations@hotmail.com?Subject=Hello" target="_top">ishancreations@hotmail.com</a>
-                <p class="xyz"> Phone: +91 97-69-818327</p>
+                <p class="xyz"> For more information contact us at.</p>
+                <span style="font-size:18px;"><a href="mailto:ishancreations@hotmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i> ishancreations@hotmail.com</a></span><br>
+               <span style="font-size:18px;"><i class="fa fa-phone" aria-hidden="true"></i> +91 97698 18327</span><br>
+               <span style="font-size:18px;"><i class="fa fa-mobile" aria-hidden="true"></i> +91 81081 27110</span>
         </div>
     </section>
 </div>
