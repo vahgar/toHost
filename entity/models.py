@@ -22,6 +22,8 @@ class business_entity(models.Model):
     category = models.ForeignKey(Category,blank=True,null=True)
     subcategory = models.ForeignKey(SubCategory,blank=True,null=True)
     subsubcategory = models.ForeignKey(SubsubCategory,blank=True,null=True)
-    
+    image_1 = models.ImageField(upload_to = 'entity_pics/', blank = True)
+    image_2 = models.ImageField(upload_to = 'entity_pics/', blank = True)
+    image_3 = models.ImageField(upload_to = 'entity_pics/', blank = True)
     def __str__(self):
     	return self.name
