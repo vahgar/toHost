@@ -157,6 +157,9 @@ li {
 	height: 20%;
 	margin: 0 auto;
 }
+.app {
+	display: none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -227,5 +230,12 @@ li {
   }
   span {
   	display: hidden;
+  }
+  #bc_page {
+  	display: none;
+  }
+  .app {
+  	margin-top:25%;
+  	display: block; 
   }
 }
