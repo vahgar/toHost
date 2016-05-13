@@ -10,6 +10,9 @@
 	<script src="{% static 'js/jquery.easing.min.js' %}"></script>
 	<script src="{% static 'js/chainedfk.js' %}"></script>
 	<script src="{% static 'js/chainedm2m.js' %}"></script>
+    <link href="{% static  'js-image-slider.css' %}" rel="stylesheet" type="text/css" />
+    <script src="{% static 'js-image-slider.js' %}" type="text/javascript"></script>
+    <link href="{% static  'generic.css' %}" rel="stylesheet" type="text/css" />
 
 	 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,8 +67,10 @@
         </div></div>
         <!-- /.container -->
     </nav>
-
-<h2 id="bizC">Select From our wide range of entities</h2>
+    <div id="bizC">
+        <h2>SELECT FROM OUR WIDE RANGE OF ENTITIES</h2>
+    </div>
+    <br>
 
 <div id="form_div">
 	<form method='POST' action="{% url 'xbc' %}"> {% csrf_token %}
@@ -74,12 +79,18 @@
 		<div id="cb"><input type="submit" class="btn btn-default" value="Submit"></div>
 	</form>
 </div>
+<br>
+<br>
+<div id="sliderFrame">
+        <div id="slider">
+            
+            <img src="{% static 'IC_logo.png' %}" />
+            <img src="{% static 'IC_logo_up.png' %}" alt="" />
+            <img src="{% static 'image1slider.jpeg' %}" />
+            <img src="{% static 'image1slider.jpeg' %}" alt="" />
+        </div>
+    </div>
 
-<div id="ads">
-
-<h2>Come advertise with us</h2>
-
-</div>
 
 
 
