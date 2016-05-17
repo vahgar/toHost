@@ -83,8 +83,6 @@ class ChooseCategory(models.Model):
 		chained_model_field="subCategory",
 		show_all=False,
 		auto_choose=False,
-		blank=True,
-		null=True,
 		)
 
 

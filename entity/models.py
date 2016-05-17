@@ -10,7 +10,7 @@ class business_entity(models.Model):
     timings = models.CharField(max_length=150,blank=True,null=True);
     contact_person = models.CharField(max_length=150,blank=True,null=True);
     address = models.CharField(max_length=1000,blank=True,null=True);
-    mobile = models.CharField(max_length=10,blank=True,null=True);
+    mobile = models.CharField(max_length=20,blank=True,null=True);
     whatsapp = models.CharField(max_length=10,blank=True,null=True)
     Email = models.EmailField(max_length=70,blank=True,null=True)
     website = models.CharField(max_length=70,blank=True,null=True)
