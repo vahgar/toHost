@@ -145,7 +145,7 @@ li {
 	margin: 0 auto;
 }
 #get_text {
-	font-family: Papyrus, fantasy;
+	font-family:fantasy;
 }
 #logo_div {
 	background-color: white;
@@ -167,6 +167,13 @@ li {
 }
 #inside_soon {
 	text-align: center;
+}
+#ask {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	font-style: italic;
+	font-size: larger;
 }
 
 @media screen and (max-width: 768px) {

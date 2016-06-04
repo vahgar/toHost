@@ -1,3 +1,7 @@
+#logo_up {
+	width: 50%;
+	margin: 0 auto;
+}
 .intro_text {
 	font-size: 35px;
 	font-family: Trebuchet MS;
@@ -24,7 +28,7 @@
 
 }
 #get_text {
-	font-family: papyrus;
+	font-family: fantasy;
 }
 p {
 	font-family: Arial;
@@ -51,9 +55,10 @@ li {
 }
 .xyz {
 	text-align: center;
+	font-size: 30px;
 }
 #size_small {
-	font-size: 15px;
+	font-size: 22px;
 }
 @media only screen and (max-width: 500px) {
     .intro_text {
@@ -76,6 +81,9 @@ li {
     img {
     	width: 60%;
 
+    }
+    .img_vision {
+    	width: 100%;
     }
 
 }
