@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 {% load staticfiles %}
-<html lang="en" style="background-color:#800080">
+<html lang="en">
 
 <head>
 
@@ -17,13 +17,14 @@
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="{% static 'css/grayscale.css' %}" rel="stylesheet">
-    <link href="{% static 'index.css' %}" rel="stylesheet">
+    <!-- <link href="css/grayscale.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link href="{% static 'menu.css' %}" rel="stylesheet">
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,161 +34,141 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-to">
+  <div id="image_div"><img id="logo" src="{% static 'IC_(logo)-W1.png' %}"/></div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: #800080; border-bottom: 2px solid #800080">
+    <nav id="navbar" class="navbar navbar-custom navbar-static-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" style="color:white;"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                  <span class="light"><i>ISHAN CREATIONS</i></span>
-
+                   <span id="name"> ISHAN CREATIONS </span>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-           <div class="purple width"> <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About Us</a>
+                        <a class="page-scroll" id="font" href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a class="page-scroll"  href="{% url 'icbc' %}">Members</a>
+                        <a class="page-scroll" id="font" href="{% url 'icbc' %}">MEMBERS</a>
                     </li>
                     <li>
-                        <a class="page-scroll"  href="{% url 'b_c' %}">Business Category</a>
+                        <a class="page-scroll" id="font" href="{% url 'b_c' %}">BUSINESS CATEGORY</a>
                     </li>
-                     <li>
-                        <a class="page-scroll"  href="#contact">Contact</a>
+                    <li>
+                        <a class="page-scroll" id="font" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div></div>
+        </div>
         <!-- /.container -->
     </nav>
 
     <!-- Intro Header -->
+    <div id="#intro">
     <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"></h1>
-                        <p class="intro_text">An individual can strengthen the world.<br>Know How?</p>
-                        <a href="#message" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <h1 class="brand-heading">An <span id="orange">INDIVIDUAL</span> can <span id="blue">STRENGTHEN</span> the <span id="green">WORLD</span>. </h1>
+                        <br><p class="intro-text">Know How?<br></p>
+                        <p id="arrow"><a href="#abou" class="btn btn-circle page-scroll">
+                            <i id="icon" class="fa fa-angle-double-down animated fa-2x" style="color:#800080;"></i>
+                        </a></p>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <div>
 
-        <section id="message" class="container content-section text-center" style="background-color:#800080; padding:100px;">
+<div id="background">
+    <!-- Message -->
+    <section id="abou" class="container content-section text-center">
         <div class="row">
-            <div class="individual">
-                
-                Ishan Creations Empowers an Individual,<br>
-                                        <p id="right">which Strengthens Family.</p> 
-                Ishan Creations Empowers Family,<br> 
-                                        <p id="right">which Strengthens Society.</p> 
-                Ishan Creations Empowers Society,
-                                        <p id="right">which Strengthens State.</p>
-                Ishan Creations Empowers State,
-                                        <p id="right"> which Strengthens Country.</p>
-                Ishan Creations Empowers Country,
-                                         <p id="right">which Strengthens the World.</p>
-                </div>
-                        
-              <p class="intro_text" style="color:#bf7fbf;">"An individual can strengthen the world"</p>                  
-        
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="margin">
+                <p class="text-lines">Ishan Creations Empowers an Individual,<br><span >which Strengthens Family.</span></p>
+                <p class="text-lines">Ishan Creations Empowers Family,<br><span>which Strengthens Society.</span></p>
+                <p class="text-lines">Ishan Creations Empowers Society,<br><span>which Strengthens State.</span></p>
+                <p class="text-lines">Ishan Creations Empowers State,<br><span>which Strengthens Country.</span></p>
+                <p class="text-lines">Ishan Creations Empowers Country,<br><span>which Strengthens the World.</span></p>
+              <div>
+                <p id="about" class="message-end">"An Individual Can Strengthen the World"</p>
 
-    </div>
-    </section>
-
-    </div>
-
-    <!-- About Section -->
-        <div class="purple">
-        <section id="about" class="container content-section text-center" Style="padding-top:100px;">
-        <div class="row">
-            <h2>About Us</h2>
-            <p> Ishan Creations was created & founded by Rajneesh Kumar Malhotra. At Ishan Creations, Our aim from inception is to put the needs of others first, and our commitment to give back Value for money to them.
-            Ishan Creations' Motto is <span id="get_text">“Get More. SMARTLY”</span> </p>
-            <br>
-            <p style="text-align:center; font-family:cursive">Introducing</p>
-            <div id="logo">
-                <img src="{% static 'IC_(logo).png' %}" alt="My image"/>
             </div>
-            <br>
-            <p>Ishan Creations is the World’s 1st and Unique innovative concept with a:<br>
-            <div id="vision">
-            <p>    
-                <i class="fa fa-star" aria-hidden="true"></i>
- Vision - वसुधैव कुटुम्बकम <span id="text">(Vasudhaiv Kutumbakam)</span>-<span id="text2">The Whole World is a Family</span><br>
-                <i class="fa fa-star" aria-hidden="true"></i>
- Mission - <span id="get_text">Empowering Consumer, Strengthening Business.</span>
-            </p>
-            
-            </div>
-            </p>
- 
-                
-            <p> 
-            <b>For Consumer</b>, Our objective is to make home consumables conveniently available with Value for money. We at Ishan Creations aim to provide Benefits in your Daily needs to Shopping, Dining to Entertainment, Fitness to Wellness and many more services with Trust.</p>
-            <p><b>For Business entity</b>, We help to get Better ROI by strengthening their business with a long term Success and Growth.
-            </p>
-            <p>It gives a platform to those Entrepreneurs / Business entities that are committed to provide Best Quality Products & Services to Our Consumer members at a reasonable competitive Price and eager to promote this awareness to everyone.
-                </p>
-
-            <p>
-                Our members are our family and we want to build Trust and Confidence in Consumer and Business entities to serve right & better by understanding their preferences and have a genuine, mutual and profound long term relationship with lots of Privileges & Benefits.
-            </p>    
-
-            <p class="xyz">
-                <span id="size_small">Not already associated with Us, what are You waiting for?</span><br>
-                Be a part of our Family & <span id="get_text">Get More. SMARTLY</span></span>
-            </p>
-
-        </div>
-
-
-    </section>
-    <div class="margin">
-    <section id="contact" class="container content-section text-center" Style="padding-top:100px;">
-        <div class="row">
-           
-                <h2>Contact Us</h2>
-                <p class="xyz"> For more information contact us at.</p>
-               <span style="font-size:18px;"><i class="fa fa-phone" aria-hidden="true"></i>+91 97698 18327</span><br>
-               <span style="font-size:18px;"><i class="fa fa-mobile" aria-hidden="true"></i> +91 81081 27110</span><br>
-                               <span style="font-size:18px;"><a href="mailto:ishancreations@hotmail.com?Subject=Hello" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i> ishancreations@hotmail.com</a></span>
         </div>
     </section>
-</div>
 
 
-    <footer>
-        <div class="container text-center">
-            <p class="xyz">Copyright &copy; Ishan Creations</p>
+
+    <section id="" class="container content-section text-center">
+      <div></div>
+        <div>
+                <h2 class="sub-headings">ABOUT US</h2>
+                <p class="about-para">Ishan Creations was created & founded by Rajneesh Kumar Malhotra. At Ishan Creations, Our aim from inception is to put the needs of others first, and our commitment to give back Value for money to them. Ishan Creations' Motto is <span style="font-family:fantasy">“Get More. SMARTLY”</span></p>
+                <p class="introducing">Introducing</p>
+                <div class="main_logo"><img id="image_width" src="{% static 'IC_(logo).png' %}"></div>
         </div>
-    </footer>
-</div>
+
+        <p class="about-para">Ishan Creations is the World’s 1<sup>st</sup> and Unique innovative concept with a:<p>
+        <h2 class="sub-headings">Vision</h2>
+        <p class="vision">वसुधैव कुटुम्बकम (Vasudhaiv Kutumbakam)</p>
+        <p class="small-text">The whole world is Family</p>
+
+        <h2 class="sub-headings">Mission</h2>
+        <p class="mission">Empowering Consumer, Strengthening Business</p>
+
+        <p class="about-para"><span style="font-weight: 800;">For Consumer</span>, Our objective is to make home consumables conveniently available with Value for money. We at Ishan Creations aim to provide Benefits in your Daily needs to Shopping, Dining to Entertainment, Fitness to Wellness and many more services with Trust.</p>
+        <p class="about-para"><span style="font-weight: 800;">For Business entity</span>, We help to get Better ROI by strengthening their business with a long term Success and Growth.</p>
+        <p class="about-para">It gives a platform to those Entrepreneurs / Business entities that are committed to provide Best Quality Products & Services to Our Consumer members at a reasonable competitive Price and eager to promote this awareness to everyone.</p>
+        <p class="about-para">Our members are our family and we want to build Trust and Confidence in Consumer and Business entities to serve right & better by understanding their preferences and have a genuine, mutual and profound long term relationship with lots of Privileges & Benefits.</p>
+        <p class="question">Not already associated with Us, what are You waiting for? </p>
+        <p class="answer">Be a part of our Family & <span style="font-family:fantasy">Get More. SMARTLY<span></p>
+
+    </section>
+
+
 
     <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="sub-headings">CONTACT US</h2>
+                <p class="small-text">For more information contact us at</p>
+                <p class="number" ><i class="fa fa-phone" aria-hidden="true"></i> +91 97698 18327</p>
+                <p class="number"><i class="fa fa-mobile" aria-hidden="true"></i> +91 81081 27110</p>
+                <p class="link"><a href="mailto:ishancreations@hotmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> ishancreations@hotmail.com</a></p>
+
+            </div>
+        </div>
+
+
+        <footer style="background-color: #800080; margin-top:25px">
+            <div class="container text-center">
+                <p class="small-text">Copyright &copy; Ishan Creations 2016</p>
+            </div>
+        </footer>
+
+
+    </section>
+
+</div>
 
     <!-- Footer -->
-  
+
+
     <!-- jQuery -->
     <script src="{% static 'js/jquery.js' %}"></script>
 
@@ -197,9 +178,28 @@
     <!-- Plugin JavaScript -->
     <script src="{% static 'js/jquery.easing.min.js' %}"></script>
 
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script> -->
+
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'js/grayscale.js' %}"></script>
 
+    <script>
+    var stickySidebar = $('#navbar').offset().top;
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > stickySidebar) {
+        $('#navbar').addClass('fixed');
+        $('#intro').addClass('top');
+    }
+    else {
+        $('#navbar').removeClass('fixed');
+          $('#intro').removeClass('top');
+    }
+});
+
+    </script>
+
 </body>
-        
+
 </html>
