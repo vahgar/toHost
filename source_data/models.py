@@ -1,5 +1,5 @@
 from django.db import models
-from smart_selects.db_fields import ChainedForeignKey 
+from smart_selects.db_fields import ChainedForeignKey
 
 # Create your models here.
 
@@ -12,7 +12,7 @@ class City(models.Model):
 class Area(models.Model):
 	city = models.ForeignKey(City)
 	name = models.CharField(max_length=255)
-	
+
 
 	def __str__(self):
 		return self.name
@@ -26,7 +26,7 @@ class Street(models.Model):
 
 
 class Locality(models.Model):
-	
+
 	city = models.ForeignKey(City,related_name="cityofloc")
 	area = ChainedForeignKey(
 		Area,
@@ -88,5 +88,4 @@ class ChooseCategory(models.Model):
 
 
 	def __str__(self):
-		return self.name	
-
+		return self.name

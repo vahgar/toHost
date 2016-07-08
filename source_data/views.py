@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from source_data.forms import CityForm,AreaForm,LocationForm,CategoryForm
+from source_data.forms import LocationForm,CategoryForm
 from .models import City,Area,Street,Category,SubCategory,SubsubCategory
 from entity.models import business_entity
 from django.db.models import Q
@@ -14,7 +14,7 @@ def index(request):
 	return render(request,'index.html')
 
 def icbc(request):
-	return render(request,'icbc.html')	
+	return render(request,'icbc.html')
 
 
 def postandresp(request):
@@ -28,7 +28,7 @@ def postandresp(request):
 			category = form1.cleaned_data['category']
 			subCategory = form1.cleaned_data['subCategory']
 			print('Hola1')
-			subsubcategory = form1.cleaned_data['Subsubcategory']
+			subsubcategory = form1.cleaned_data['subsubCategory']
 			print('Hola')
 			data = business_entity.objects.filter(Q(city__name=city),Q(area__name=area),Q(locality__name=street),Q(category__name=category),Q(subcategory__name=subCategory),Q(subsubcategory__name=subsubcategory))
 			context = {'data':data}

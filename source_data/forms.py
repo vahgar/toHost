@@ -14,7 +14,7 @@ class AreaForm(ModelForm):
 class LocationForm(ModelForm):
 	class Meta:
 		model = Locality
-		fields = ['city','area','street'] 
+		fields = ['city','area','street']
 
 class CategoryForm(ModelForm):
 	class Meta:
