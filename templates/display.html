@@ -1,4 +1,36 @@
+{% load static %}
+{% load staticfiles %}
+
+<html>
+<header>
+<title>Result</title>
+</header>
+<body>
+
 {% for i in data %}
-	{{ i.name }} <br>
-	{{ i.timings }}
+<div id='details'>
+<div id='name_head'>
+<p id='h_name'>"+ {{i.name}} +"</p>
+</div>
+<div id='Hide'>
+<div id='desc'>
+  <p><b>Profile :</b>"+ {{i.profile}} +"</p>
+  <p><b>Services:</b>"+ {{i.services}} +"</p>
+  <p><b>Timings :</b>"+ {{i.timings}} +"</p>
+</div>
+<p id='border'><b>Contact Person :</b>"+ {{i.contact_person}} +"</p>
+<p id='border'><b>Tel/Mob. :</b>"+ {{i.mobile}} +"</p>
+<p id='border'><b>Whatsapp :</b>"+ {{i.whatsapp}} +"</p>
+<p id='border'><b>Email id :</b>"+ {{i.Email}} +"</p>
+<p id='border'><b>Website :</b><a href="+{{i.website}}+">Link <i class='fa fa-external-link-square'></i><a></p>
+<p id='border'><b>Social Medialink :</b><a href="/details/{{i.name}}">Link</a></p>
+<p><b>Address:</b><p>
+<div><p>"+{{i.address}}+"</p></div>
+</div>
+</div>
+</div>
 {% endfor %}
+
+</body>
+
+</html>
