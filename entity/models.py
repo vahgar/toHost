@@ -3,7 +3,7 @@ from source_data.models import City,Area,Street,Category,SubCategory,SubsubCateg
 
 # Create your models here.
 class business_entity(models.Model):
-    
+
     name = models.CharField(max_length=200,blank=True);
     profile = models.CharField(max_length=4096,blank=True,null=True);
     services = models.CharField(max_length=4096,blank=True,null=True);

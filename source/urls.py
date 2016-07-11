@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^business_category/','source_data.views.checkselect',name='b_c'),
     url(r'^thisisformobilepleasedonttrythisurl/$','entity.views.mobileapi',name="mobilesuit"),
     url(r'^answer/','source_data.views.postandresp',name="xbc"),
-    url(r'^details/(?P<entity_name>[A-Z]+)/','entity.views.details',name="detail view")
+    url(r'^details/(?P<entity_name>[A-Z]+)/','entity.views.details',name="detail view"),
+    url(r'^adimages/','ads.views.adimages',name="adimages"),
+
 
 ] + static.static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
