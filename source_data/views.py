@@ -2,12 +2,18 @@ from django.shortcuts import render, HttpResponse
 from source_data.forms import LocationForm,CategoryForm
 from .models import City,Area,Street,Category,SubCategory,SubsubCategory
 from entity.models import business_entity
+from ads.models import ads_image
 from django.db.models import Q
 # Create your views here.
 def checkselect(request):
 	form_x = LocationForm();
 	form_y = CategoryForm();
-	context = {'form':form_x, 'form1':form_y}
+	data = ads_image.objects.all()
+	data_list = []
+	for i in data:
+		data_list.append({"URL":'/media/'+i.images.name,"name":i.name})
+	context = {'form':form_x, 'form1':form_y,'data_list':data_list}
+	print("Raghav Khurana")
 	return render(request,'business_category.html',context);
 
 def index(request):

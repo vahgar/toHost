@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ICBC</title>
+    <title>Answer</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -20,7 +20,7 @@
 
     <!-- Custom Fonts -->
 
-    <link href="{% static 'icbc.css' %}" rel="stylesheet">
+    <link href="{% static 'display.css' %}" rel="stylesheet">
     <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
     <!-- <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
@@ -66,6 +66,13 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    {% for i in data %}
+    <div class="box">
+      <div><a href="/details/{{ i.name }}">{{i.name}}</a>
+
+    </div>
+    {% endfor %}
 
     <script src="{% static 'js/jquery.js' %}"></script>
      <!-- Bootstrap Core JavaScript -->
