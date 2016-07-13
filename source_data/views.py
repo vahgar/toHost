@@ -37,7 +37,8 @@ def postandresp(request):
 			subsubcategory = form1.cleaned_data['subsubCategory']
 			print('Hola')
 			data = business_entity.objects.filter(Q(city__name=city),Q(area__name=area),Q(locality__name=street),Q(category__name=category),Q(subcategory__name=subCategory),Q(subsubcategory__name=subsubcategory))
-			context = {'data':data}
+			context = {'data':data,'subCategory':subCategory,'area':area, 'street':street}
+			print(data)
 			return render(request,'display.html',context)
 	else:
 		form_x = LocationForm();
