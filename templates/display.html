@@ -93,19 +93,15 @@
       <p class="discription">{{ i.email }}</p></div>
 
       <div class="link">
-      {% if i.social_media == null %}
-      {
-
-      }
-      {% else %}
-          <a href='{{i.social_media|default_if_none:"#"}}'><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      {% endif %}
+          <a href='{{i.social_media|default_if_none:"#"}}'><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href='{{i.website|default_if_none:"#"}}'><i class="fa fa-globe" aria-hidden="true"></i></a>
       </div>
 
       </div>
 
     </div>
     {% endfor %}
+
+    <p style="text-align:center;">That's all folks.</p>
 
     <script src="{% static 'js/jquery.js' %}"></script>
      <!-- Bootstrap Core JavaScript -->

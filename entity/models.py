@@ -13,8 +13,8 @@ class business_entity(models.Model):
     mobile = models.CharField(max_length=20,blank=True,null=True);
     whatsapp = models.CharField(max_length=10,blank=True,null=True)
     Email = models.EmailField(max_length=70,blank=True,null=True)
-    website = models.CharField(max_length=70,blank=True,null=True)
-    social_media = models.CharField(max_length=300,blank=True,null=True)
+    website = models.CharField(max_length=70,default="#")
+    social_media = models.CharField(max_length=300,default="#")
     customer_rating = models.FloatField(blank=True,null=True,)
     city = models.ForeignKey(City,blank=True,null=True)
     area = models.ForeignKey(Area,blank=True,null=True)

@@ -3,6 +3,10 @@ from django.http import Http404
 from .models import business_entity
 from django.core import serializers
 import json
+
+class error():
+	def out(self):
+		print("works")
 # Create your views here.
 def mobileapi(request):
 	data = business_entity.objects.all();
@@ -15,5 +19,13 @@ def mobileapi(request):
 
 def details(request,entity_name):
 	entity = get_object_or_404(business_entity, name=entity_name)
-	x = entity.locality
-	return HttpResponse("You're dtailing on question %s." % x)
+	data = business_entity.objects.get(id=entity.id)
+	image_list = []
+	if(entity.image_1):
+		image_list.append(entity.image_1.url)
+	if(entity.image_2):
+		image_list.append(entity.image_2.url)
+	if(entity.image_2):
+		image_list.append(entity.image_2.url)
+	context = {"entity": data, "image_list":image_list}
+	return render(request,'images.html',context);
