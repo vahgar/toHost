@@ -1,7 +1,57 @@
 {% load static %}
 {% load staticfiles %}
-{{entity.name}}
+<html>
+<head>
 
-{% for i in image_list%}
-  <img src="{{i}}"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Answer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <!-- <link href="css/grayscale.css" rel="stylesheet"> -->
+
+    <!-- Custom Fonts -->
+
+    <link href="{% static 'display.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<h2>{{entity.name}} at Glance</h2>
+
+<div class="container">
+
+{% for i in image_list %}
+<div class="row space">
+  <div class="col-md-12">
+    <img  class="img-responsive" src="{{i}}"/>
+  </div>
+</div>
+{% empty %}
+<p class="discription" style="text-align:center;">Sorry, We don't have images associated with {{ entity.name }}. <br>
+  For more information you can contact the vendor directly at <br>
+  {{ entity.contact_person }} : {{ entity.mobile }}
 {% endfor %}
+
+</div>
+
+</body>
+
+</html>

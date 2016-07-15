@@ -97,7 +97,7 @@ a {
 .name-entity {
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 1.7em;
-  color: white;
+  color: #330033;
   padding: 3% 3% 3% 3%;
   font-weight: 400;
   letter-spacing: 1px;
@@ -133,6 +133,10 @@ a {
   padding-bottom: 1%;
   text-align: right;
 
+}
+.space {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 @media only screen and (max-width: 500px) {
 .name-entity {

@@ -25,7 +25,7 @@ def details(request,entity_name):
 		image_list.append(entity.image_1.url)
 	if(entity.image_2):
 		image_list.append(entity.image_2.url)
-	if(entity.image_2):
-		image_list.append(entity.image_2.url)
+	if(entity.image_3):
+		image_list.append(entity.image_3.url)
 	context = {"entity": data, "image_list":image_list}
 	return render(request,'images.html',context);
