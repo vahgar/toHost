@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     "bootstrap3",
     'entity',
     "ads",
+    'rest_framework',
 )
 
 MIDDLEWARE_CLASSES = (

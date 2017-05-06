@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url,static
 from django.contrib import admin
 from django.conf import settings
+from entity.api.api_views import EntityListAPIView
 
 urlpatterns = [
     url(r'^$', 'source_data.views.index',name="homepage"),
@@ -27,6 +28,7 @@ urlpatterns = [
     url(r'^answer/','source_data.views.postandresp',name="xbc"),
     url(r'^details/(?P<entity_name>[A-Za-z,]+)/','entity.views.details',name="detail view"),
     url(r'^adimages/','ads.views.adimages',name="adimages"),
+    url(r'^api_list/',EntityListAPIView.as_view() ,name="entity_list"),
 
 
 ] + static.static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

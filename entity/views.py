@@ -4,9 +4,7 @@ from .models import business_entity
 from django.core import serializers
 import json
 
-class error():
-	def out(self):
-		print("works")
+
 # Create your views here.
 def mobileapi(request):
 	data = business_entity.objects.all();
